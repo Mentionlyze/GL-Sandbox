@@ -138,6 +138,7 @@
     <ClCompile Include="src\IndexBuffer.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\tests\TestCube.cpp" />
     <ClCompile Include="src\tests\TestPerspective.cpp" />
     <ClCompile Include="src\tests\TestTexture2D.cpp" />
     <ClCompile Include="src\tests\Test.cpp" />
@@ -158,6 +159,7 @@
   <ItemGroup>
     <ClInclude Include="Dependencies\GLFW\include\GLFW\glfw3.h" />
     <ClInclude Include="Dependencies\GLFW\include\GLFW\glfw3native.h" />
+    <ClInclude Include="src\tests\TestCube.h" />
     <ClInclude Include="src\tests\TestPerspective.h" />
     <ClInclude Include="src\tests\TestTexture2D.h" />
     <ClInclude Include="src\tests\TestClearColor.h" />
@@ -463,6 +465,8 @@
     <ClInclude Include="src\VertexBufferLayout.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\shaders\cube.frag" />
+    <None Include="res\shaders\cube.vert" />
     <None Include="res\shaders\shader.frag" />
     <None Include="res\shaders\shader.vert" />
     <None Include="src\vendor\glm\detail\func_common.inl" />
