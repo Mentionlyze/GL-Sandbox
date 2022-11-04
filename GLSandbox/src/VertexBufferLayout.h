@@ -58,7 +58,4 @@ public:
 
 	inline const std::vector<VertexBufferElement> GetElements() const { return m_Elements; }
 	inline const unsigned int GetStride() const { return m_Stride; }
-
-private:
-
 };

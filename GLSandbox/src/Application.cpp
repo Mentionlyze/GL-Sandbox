@@ -17,6 +17,7 @@
 #include "tests/TestTexture2D.h"
 #include "tests/TestPerspective.h"
 #include "tests/TestCube.h"
+#include "tests/TestCamera.h"
 
 void ProcessInput(GLFWwindow* window);
 void FrameBufferSizeCallback(GLFWwindow* window, int width, int height);
@@ -76,6 +77,8 @@ int main(void)
         testMenu->RegisterTest<test::TestTexture2D>("Translate");
         testMenu->RegisterTest<test::TestPerspective>("Perspective");
         testMenu->RegisterTest<test::TestCube>("Cube");
+
+        testMenu->RegisterTest<test::TestCamera>("Camera");
 
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
